@@ -1,8 +1,25 @@
-# Academic Visual-Notes Illustrator — AI Skill
+<div align="center">
+
+## AIOpenVC · Open AI Toolkit for Investment
+
+**Academic Visual-Notes Illustrator — AI Skill**
+
+*Reshaping how primary-market information gets expressed, with AI · by Yijue*
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![Stars](https://img.shields.io/github/stars/one5ds/visual-notes-illustrator?style=flat-square&label=Stars&color=yellow)](https://github.com/one5ds/visual-notes-illustrator/stargazers)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+[![i18n](https://img.shields.io/badge/lang-中文%20%2F%20English-blue.svg)](./README.md)
+
+⭐ **If this method helps you, hit Star in the top-right corner — it's the best support you can give.** ⭐
+
+</div>
+
+---
 
 > Turn any paragraph into an academic, hand-drawn "visual notes" illustration — and get a precise, ready-to-paste image-generation prompt.
 
-[简体中文 README →](./README.md) · [Example prompt →](./examples/perovskite-visual-note-prompt.md)
+[简体中文 README →](./README.md) · [Example prompt →](./examples/perovskite-visual-note-prompt.md) · [Contributing →](./CONTRIBUTING.md)
 
 ![Example: perovskite "tunable threshold" visual note, 9:16 portrait](./assets/perovskite-example.png)
 
@@ -53,11 +70,11 @@ Prism refraction tower, gear tree, neuron coral, floating compass, fission nucle
 
 ```bash
 # WorkBuddy (user level)
-git clone https://github.com/<your-username>/visual-notes-illustrator.git \
+git clone https://github.com/one5ds/visual-notes-illustrator.git \
   ~/.workbuddy/skills/visual-notes-illustrator
 
 # Claude Code (user level)
-git clone https://github.com/<your-username>/visual-notes-illustrator.git \
+git clone https://github.com/one5ds/visual-notes-illustrator.git \
   ~/.claude/skills/visual-notes-illustrator
 ```
 
@@ -81,9 +98,11 @@ visual-notes-illustrator/
 ├── README.md                # Chinese README
 ├── README_EN.md             # This file
 ├── LICENSE                  # MIT
+├── CONTRIBUTING.md          # Contributing guide (subject-pool entries)
 ├── .gitignore
 ├── assets/
-│   ├── perovskite-example.png
+│   ├── perovskite-example.png    # Case A render (hourglass engine)
+│   ├── perovskite-example-b.png  # Case B render (stepped pyramid)
 │   └── gallery/
 │       ├── vc-landscape-2026.png       # 2026 VC landscape reshuffle
 │       ├── compass-imperfect-path.jpg  # Trace a perfect path in imperfection
@@ -91,7 +110,8 @@ visual-notes-illustrator/
 │       ├── pen-wisdom-labels.jpg       # Pen & prayer beads — annotated concept
 │       └── pen-wisdom-blueprint.jpg    # Pen & prayer beads — drafting sheet
 └── examples/
-    └── perovskite-visual-note-prompt.md
+    ├── perovskite-visual-note-prompt.md    # Case A prompt (hourglass engine)
+    └── perovskite-visual-note-prompt-b.md # Case B prompt (stepped pyramid)
 ```
 
 ## 9. Gallery
@@ -132,6 +152,25 @@ One visual spec, different source texts → different core subjects, different h
 </table>
 
 > The same source text supports multiple iterations: the last row shows two render directions — an annotated concept sheet and a drafting sheet — for one theme.
+
+### Same text, different subject = different picture (Case A / B)
+
+Identical source text, title and information zones — only the core subject and hidden motif change:
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./assets/perovskite-example.png" alt="Case A hourglass engine"><br>
+      <sub><b>Case A · Hourglass Engine</b><br>Metaphor: photons filtered through an adjustable valve · Motif: Chinese fret</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="./assets/perovskite-example-b.png" alt="Case B stepped pyramid"><br>
+      <sub><b>Case B · Stepped Pyramid</b><br>Metaphor: step height raised and lowered · Motif: Arabic geometric</sub>
+    </td>
+  </tr>
+</table>
+
+Full prompts: [Case A](./examples/perovskite-visual-note-prompt.md) · [Case B](./examples/perovskite-visual-note-prompt-b.md)
 
 ## 10. License
 

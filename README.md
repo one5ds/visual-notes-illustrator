@@ -1,10 +1,27 @@
-# 学院派视觉笔记插画 Skill
+<div align="center">
+
+## AIOpenVC · 开放式 AI 投资工具生态
+
+**学院派视觉笔记插画 Skill**
+
+*用 AI 重构一级市场的信息表达 · 主理人：一觉同学*
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![Stars](https://img.shields.io/github/stars/one5ds/visual-notes-illustrator?style=flat-square&label=Stars&color=yellow)](https://github.com/one5ds/visual-notes-illustrator/stargazers)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+[![i18n](https://img.shields.io/badge/lang-中文%20%2F%20English-blue.svg)](./README_EN.md)
+
+⭐ **如果这套方法论对你有用，请点右上角 Star —— 这是对它最好的支持** ⭐
+
+</div>
+
+---
 
 > 把任何一段文字，变成一张「实验室研究记录」质感的手绘视觉笔记插画，并产出豆包 / 即梦 / Midjourney 可用的精准提示词。
 >
 > Turn any paragraph into an academic hand-drawn "visual notes" illustration — with ready-to-use image-generation prompts.
 
-[English README →](./README_EN.md) · [示例 Example →](./examples/perovskite-visual-note-prompt.md)
+[English README →](./README_EN.md) · [示例 Example →](./examples/perovskite-visual-note-prompt.md) · [贡献指南 →](./CONTRIBUTING.md)
 
 ![示例：钙钛矿「可调门槛」视觉笔记（9:16 竖版）](./assets/perovskite-example.png)
 
@@ -83,9 +100,11 @@ visual-notes-illustrator/
 ├── README.md                # 本文件
 ├── README_EN.md             # English README
 ├── LICENSE                   # MIT
+├── CONTRIBUTING.md           # 贡献指南（重点：元素池新词条规范）
 ├── .gitignore
 ├── assets/
-│   ├── perovskite-example.png          # 示例成图（钙钛矿）
+│   ├── perovskite-example.png          # 案例 A 成图（沙漏引擎）
+│   ├── perovskite-example-b.png        # 案例 B 成图（阶梯金字塔）
 │   └── gallery/                        # 作品画廊
 │       ├── vc-landscape-2026.png       # 2026 创投大洗牌
 │       ├── compass-imperfect-path.jpg  # 在不完美中走出完美轨迹
@@ -93,7 +112,8 @@ visual-notes-illustrator/
 │       ├── pen-wisdom-labels.jpg       # 悟出世智慧（概念标注版）
 │       └── pen-wisdom-blueprint.jpg    # 悟出世智慧（设计制图版）
 └── examples/
-    └── perovskite-visual-note-prompt.md # 示例提示词（完整版 + 精简版）
+    ├── perovskite-visual-note-prompt.md   # 案例 A 提示词（沙漏引擎）
+    └── perovskite-visual-note-prompt-b.md # 案例 B 提示词（阶梯金字塔）
 ```
 
 ## 九、作品画廊
@@ -134,6 +154,25 @@ visual-notes-illustrator/
 </table>
 
 > 同一底本可以多轮迭代：最后两行就是同一主题的「概念标注版」与「设计制图版」两种出图方向。
+
+### 同一段文字，换主体 = 换一张图（案例 A / B）
+
+底本、主标题、信息分区完全不变，只换核心主体与隐藏纹样：
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./assets/perovskite-example.png" alt="案例A 沙漏引擎"><br>
+      <sub><b>案例 A · 沙漏引擎</b><br>隐喻：光子穿过可调阀门被筛选 · 纹样：中国回纹</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="./assets/perovskite-example-b.png" alt="案例B 阶梯金字塔"><br>
+      <sub><b>案例 B · 阶梯金字塔</b><br>隐喻：台阶高度被调高调低 · 纹样：阿拉伯几何纹</sub>
+    </td>
+  </tr>
+</table>
+
+完整提示词：[案例 A](./examples/perovskite-visual-note-prompt.md) · [案例 B](./examples/perovskite-visual-note-prompt-b.md)
 
 ## 十、License
 
