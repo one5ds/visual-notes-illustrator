@@ -55,11 +55,11 @@
 
 ```bash
 # WorkBuddy（用户级）
-git clone https://github.com/<你的用户名>/visual-notes-illustrator.git \
+git clone https://github.com/one5ds/visual-notes-illustrator.git \
   ~/.workbuddy/skills/visual-notes-illustrator
 
 # Claude Code（用户级）
-git clone https://github.com/<你的用户名>/visual-notes-illustrator.git \
+git clone https://github.com/one5ds/visual-notes-illustrator.git \
   ~/.claude/skills/visual-notes-illustrator
 ```
 
