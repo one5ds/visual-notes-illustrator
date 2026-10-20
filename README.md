@@ -55,11 +55,11 @@
 
 ```bash
 # WorkBuddy（用户级）
-git clone https://github.com/one5ds/visual-notes-illustrator.git \
+git clone https://github.com/<你的用户名>/visual-notes-illustrator.git \
   ~/.workbuddy/skills/visual-notes-illustrator
 
 # Claude Code（用户级）
-git clone https://github.com/one5ds/visual-notes-illustrator.git \
+git clone https://github.com/<你的用户名>/visual-notes-illustrator.git \
   ~/.claude/skills/visual-notes-illustrator
 ```
 
@@ -85,14 +85,55 @@ visual-notes-illustrator/
 ├── LICENSE                   # MIT
 ├── .gitignore
 ├── assets/
-│   └── perovskite-example.png          # 示例成图
+│   ├── perovskite-example.png          # 示例成图（钙钛矿）
+│   └── gallery/                        # 作品画廊
+│       ├── vc-landscape-2026.png       # 2026 创投大洗牌
+│       ├── compass-imperfect-path.jpg  # 在不完美中走出完美轨迹
+│       ├── evolution-journey.jpg       # 进化之旅
+│       ├── pen-wisdom-labels.jpg       # 悟出世智慧（概念标注版）
+│       └── pen-wisdom-blueprint.jpg    # 悟出世智慧（设计制图版）
 └── examples/
     └── perovskite-visual-note-prompt.md # 示例提示词（完整版 + 精简版）
 ```
 
-## 九、示例
+## 九、作品画廊
 
-底本是一段讲钙钛矿带隙可调的科普文字，选了 **12 号「沙漏引擎」**：沙漏 = 能量门槛的筛选机制，腰部可调阀门 = 1.2–3.0 eV 连续可调的带隙，下腔 = 钙钛矿 / 晶硅叠层电池。完整提示词见 [examples](./examples/perovskite-visual-note-prompt.md)。
+同一套视觉规范，不同底本 → 不同核心主体、不同隐藏纹样。每张图的核心主体都由「20 选 1」流程确定。
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./assets/perovskite-example.png" alt="钙钛矿可调门槛"><br>
+      <sub><b>钙钛矿：唯一能把「门槛」调出来的光伏材料</b><br>核心主体：沙漏引擎 · 纹样：回纹 · 9:16</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="./assets/gallery/vc-landscape-2026.png" alt="2026中国创投大洗牌"><br>
+      <sub><b>2026 中国创投大洗牌：国资主导、硬科技崛起、并购成退出之王</b><br>核心主体：马蹄形磁铁（磁场＝资本集聚力）· 纹样：回纹＋祥云 · 16:9</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./assets/gallery/compass-imperfect-path.jpg" alt="在不完美中走出完美轨迹"><br>
+      <sub><b>在不完美中走出完美轨迹</b><br>核心主体：制图圆规 · 纹样：曼荼罗 · 横版</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="./assets/gallery/evolution-journey.jpg" alt="进化之旅"><br>
+      <sub><b>EVOLUTION JOURNEY · 进化之旅</b><br>核心主体：恐龙骨架剖面 · 纹样：古希腊瓶画 · 横版</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./assets/gallery/pen-wisdom-labels.jpg" alt="悟出世的智慧做入世的凡夫·概念标注版"><br>
+      <sub><b>悟出世的智慧，做入世的凡夫（概念标注版）</b><br>核心主体：缠佛珠钢笔 · 纹样：曼荼罗 · 16:9</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="./assets/gallery/pen-wisdom-blueprint.jpg" alt="悟出世的智慧做入世的凡夫·设计制图版"><br>
+      <sub><b>悟出世的智慧，做入世的凡夫（设计制图版）</b><br>核心主体：缠佛珠钢笔＋多视角草图与尺寸标注 · 16:9</sub>
+    </td>
+  </tr>
+</table>
+
+> 同一底本可以多轮迭代：最后两行就是同一主题的「概念标注版」与「设计制图版」两种出图方向。
 
 ## 十、License
 

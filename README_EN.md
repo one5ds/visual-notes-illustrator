@@ -83,14 +83,55 @@ visual-notes-illustrator/
 ├── LICENSE                  # MIT
 ├── .gitignore
 ├── assets/
-│   └── perovskite-example.png
+│   ├── perovskite-example.png
+│   └── gallery/
+│       ├── vc-landscape-2026.png       # 2026 VC landscape reshuffle
+│       ├── compass-imperfect-path.jpg  # Trace a perfect path in imperfection
+│       ├── evolution-journey.jpg       # Evolution journey
+│       ├── pen-wisdom-labels.jpg       # Pen & prayer beads — annotated concept
+│       └── pen-wisdom-blueprint.jpg    # Pen & prayer beads — drafting sheet
 └── examples/
     └── perovskite-visual-note-prompt.md
 ```
 
-## 9. Example
+## 9. Gallery
 
-Source text: a popular-science passage on perovskite's tunable bandgap. Subject chosen: **#12 "Hourglass Engine"** — the hourglass is the energy-threshold filter, the adjustable waist valve is the 1.2–3.0 eV tunable bandgap, the lower chamber is the perovskite/silicon tandem cell. Full prompt in [examples](./examples/perovskite-visual-note-prompt.md).
+One visual spec, different source texts → different core subjects, different hidden motifs. Each subject was chosen through the "pick 1 of 20" step.
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./assets/perovskite-example.png" alt="Perovskite tunable threshold"><br>
+      <sub><b>Perovskite: the material with a tunable threshold</b><br>Subject: hourglass engine · Motif: Chinese fret · 9:16</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="./assets/gallery/vc-landscape-2026.png" alt="2026 VC landscape reshuffle"><br>
+      <sub><b>2026 China VC reshuffle: state capital leads, hard tech rises, M&amp;A rules exits</b><br>Subject: horseshoe magnet (magnetic field = capital gravity) · Motif: fret + auspicious clouds · 16:9</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./assets/gallery/compass-imperfect-path.jpg" alt="Trace a perfect path in imperfection"><br>
+      <sub><b>Trace a Perfect Path in Imperfection</b><br>Subject: drafting compass · Motif: mandala · landscape</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="./assets/gallery/evolution-journey.jpg" alt="Evolution journey"><br>
+      <sub><b>EVOLUTION JOURNEY</b><br>Subject: dinosaur skeleton cutaway · Motif: Greek vase ornament · landscape</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./assets/gallery/pen-wisdom-labels.jpg" alt="Wisdom of enlightenment, annotated"><br>
+      <sub><b>Wisdom of Enlightenment, Mortal in the Market (annotated concept)</b><br>Subject: fountain pen wrapped in prayer beads · Motif: mandala · 16:9</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="./assets/gallery/pen-wisdom-blueprint.jpg" alt="Wisdom of enlightenment, drafting sheet"><br>
+      <sub><b>Wisdom of Enlightenment, Mortal in the Market (drafting sheet)</b><br>Subject: fountain pen with multi-view sketches and dimension callouts · 16:9</sub>
+    </td>
+  </tr>
+</table>
+
+> The same source text supports multiple iterations: the last row shows two render directions — an annotated concept sheet and a drafting sheet — for one theme.
 
 ## 10. License
 
