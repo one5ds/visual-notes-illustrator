@@ -37,7 +37,7 @@ This Skill turns text → illustration into a **controlled pipeline**: pick the 
 |---|---|---|
 | ① Ratio | Choose 16:9 / 4:3 / 3:4 / 9:16 | Layout + pixel spec |
 | ② Decompose | Central idea → title; sub-arguments → zones; concepts → bilingual labels | Structure breakdown table |
-| ③ Subject | 20 subjects sampled from a 50-item pool, listed by number | One core subject |
+| ③ Subject | 20 subjects sampled across categories from a **200-item pool**, listed by number | One core subject |
 | ④ Prompt | Fill the template → full version + 120-word compact version | Ready-to-use prompt |
 | ⑤ Render | Generate the image; iterate on individual elements | Finished illustration |
 
@@ -50,21 +50,44 @@ This Skill turns text → illustration into a **controlled pipeline**: pick the 
 | 3:4 portrait | 896×1152 | Paper figures, notebook pages |
 | 9:16 portrait | 1080×1920 | Mobile long-form, social posters |
 
-## 4. Visual specification (the style skeleton)
+## 4. Visual specification (v1.1.0 — Bright & Focused)
 
-- **Canvas**: white-dominant, faint 5 mm printed graph-paper grid, no dark background or dark borders
-- **Line work**: crisp HB/2B graphite pencil drawing; shading by hatching and cross-hatching
-- **Drafting elements**: dimension lines, arrows, coordinate axes, angle arcs, vectors, section symbols, numbered tags
-- **Formulas**: 3–5 handwritten math / physics / chemistry / biology formulas relevant to the topic
-- **Color**: grayscale base with low-saturation marker accents — **color coverage under 12%**
-- **Handwritten notes**: 4–6 legible-but-scratchy annotations with underlines and circled marks
-- **Academic texture**: sticky notes, paper clips, tape marks, punch holes, red correction marks, margin numbering
-- **Hidden pattern**: one of Chinese fret / Greek vase / Arabic geometric / mandala / Andean textile / Persian miniature motif, as a very faint underlay
+> v1.1.0 recalibrates the whole style toward the author's own renders: **vivid colors, one big hero subject, restrained information**. The old "grayscale-dominant, <12% color" spec is retired.
+
+- **Color is the star**: 3–5 saturated theme colors (vermilion, orange-yellow, lemon yellow, emerald, sky blue, royal blue) with marker flat fills, gradient bars and bold colored arrows; warm-brown / teal washes on metal, wood and glass — **color coverage 30–40%**
+- **Subject**: the core subject fills **55–65%** of the canvas, richly detailed, the single focal point
+- **Restraint**: bilingual labels **≤ 4**, formulas **≤ 3**, handwritten notes **≤ 4**, surrounding sketches **≤ 3**; whitespace **≥ 30%** — readable in three seconds
+- **Title**: plaque-style bilingual title bar (gold-trimmed or dark banner)
+- **Canvas**: off-white/white + very faint graph paper, generous margins, no dark ground
+- **Line work**: crisp HB/2B graphite, hatched shadows that stay bright; drafting annotations only where they matter
+- **Academic texture**: at most 2 sticky notes, margin numbering — fewer details beat more
+- **Hidden pattern**: Chinese clouds/fret, Greek vase, Arabic geometric, mandala, Andean textile, Persian miniature — pale gold, corners only
 - **Text discipline**: printed bilingual labels only — no words unrelated to the source text
 
-## 5. The 50-item subject pool (20 sampled each run)
+## 5. The 200-item subject pool (20 categories × 10, 20 sampled across categories each run)
 
-Prism refraction tower, gear tree, neuron coral, floating compass, fission nucleus, double-helix staircase, hourglass engine, folded paper city, root network, honeycomb dome, crystal obelisk, origami bird, gear heart, onion-section sphere, fractal fern, lever balance, labyrinth slab, rising bubble tower, pendulum orbit, multistage rocket, crucible furnace, seed germination chamber, magnetic levitation gyro, creeping pipe body, puzzle cube, stepped pyramid, fiber-optic bouquet, swarm array, lock-and-key mechanism, lens eyeball, vortex funnel, shattered mask, arch bridge, windmill blades, tree-ring disc, folded map, vascular tree, ice crystal lattice, volcano section, gear compass, hatching egg, circuit-board mountain, pulley block, rippling water, stepped waterfall, nesting dolls, ballistic parabola, moon-phase disc, sundial gnomon, spiral galaxy disc
+> Never repeat a subject for the same source text. To add entries, see [CONTRIBUTING](./CONTRIBUTING.md).
+
+**I. Cosmos & Sky**: 1 Solar corona / 2 Moon-phase ring / 3 Saturn ring / 4 Star-trail vortex / 5 Meteor belt / 6 Butterfly nebula / 7 Black-hole accretion disk / 8 Earth–moon orbit / 9 Comet tail / 10 Constellation compass
+**II. Light & Mirrors**: 11 Prism refraction tower / 12 Kaleidoscope / 13 Convex-lens focus bench / 14 Periscope pipeline / 15 Fiber-optic bouquet / 16 Magnifier archipelago / 17 Revolving lantern / 18 Rainbow droplet / 19 Mirror hall / 20 Sundial gnomon
+**III. Gears & Machines**: 21 Gear tree / 22 Gear heart / 23 Gear compass / 24 Clockwork city / 25 Chain-drive bridge / 26 Steam-piston engine / 27 Watch movement / 28 Differential gear set / 29 Crank linkage / 30 Mechanical bird
+**IV. Architecture & Structures**: 31 Stepped pyramid / 32 Arch bridge / 33 Honeycomb dome / 34 Cable-stayed tower / 35 Spiral-ramp tower / 36 Skyscraper skeleton / 37 Dome scaffolding / 38 Parthenon columns / 39 Great-Wall battlements / 40 Folded paper city
+**V. Vessels & Containers**: 41 Hourglass engine / 42 Onion-section sphere / 43 Distillation flask / 44 Honey-jar drip / 45 Lighthouse kettle / 46 Thermos cross-section / 47 Funnel splitter / 48 Crucible furnace / 49 Ship in a bottle / 50 Water clock
+**VI. Vehicles & Voyages**: 51 Multistage rocket / 52 Hot-air balloon basket / 53 Sailboat mast / 54 Steam locomotive / 55 Ornithopter / 56 Submarine cutaway / 57 Cable-car line / 58 Motorcycle engine / 59 Kite formation / 60 Kayak channel
+**VII. Natural Growth**: 61 Root network / 62 Fractal fern / 63 Tree-ring disc / 64 Stump cross-section / 65 Bamboo growth chain / 66 Dandelion scatter / 67 Vine trellis / 68 Coral-reef fan / 69 Swarm array / 70 Seed germination chamber
+**VIII. Life & Body**: 71 Neuron coral / 72 Vascular tree / 73 DNA spiral staircase / 74 Heart pump station / 75 Butterfly metamorphosis / 76 Honeycomb alveoli / 77 Cell-division ring / 78 Immune shield array / 79 Bone suspension bridge / 80 Cochlea spiral
+**IX. Water & Fluids**: 81 Rippling water / 82 Stepped waterfall / 83 Vortex funnel / 84 Ice crystal lattice / 85 Waterwheel mill / 86 Tidal gears / 87 Siphon bend / 88 Spring-layer well / 89 Raindrop timer / 90 Ocean-trench section
+**X. Sound & Instruments**: 91 Tuning-fork resonance / 92 Chime-bell array / 93 Violin string bench / 94 Drum-wave membrane / 95 Bagpipe airbag / 96 Vinyl groove disc / 97 Sonar ripple disc / 98 Wind-chime corridor / 99 Conductor waveform / 100 Pan-flute scale pipes
+**XI. Writing & Stationery**: 101 Fountain pen with prayer beads / 102 Pencil-shaving curl / 103 Ink-diffusion bottle / 104 Movable-type tray / 105 Folded map / 106 Stitched book spine / 107 Pushpin flight path / 108 Sticky-note waterfall / 109 Typewriter type drum / 110 Seal imprint bench
+**XII. Food & Stoves**: 111 Layered cocktail / 112 Flame pan / 113 Popcorn pressure cooker / 114 Steamer stack tower / 115 Candied-haw stack / 116 Coffee extraction tower / 117 Ice-cream cone swirl / 118 Juicer auger / 119 Zoned hotpot / 120 Noodle-pull ladder
+**XIII. Sport & Force**: 121 Lever balance / 122 Pulley block / 123 Ballistic parabola / 124 Dumbbell split / 125 Spring dynamometer / 126 Trampoline parabola / 127 Bow tension arch / 128 Pole-vault arc / 129 Hammer-throw orbit / 130 Climbing-hold wall
+**XIV. Tools & Hardware**: 131 Hammer and anvil / 132 Caliper opening / 133 Fuse meltdown / 134 Key-bitting row / 135 Lock pin tumbler / 136 Maglev gyro / 137 Welding spark bench / 138 Grinding wheel / 139 Screw jack / 140 Tool-belt roll
+**XV. Lamps & Energy**: 141 Incandescent filament / 142 Solar petal array / 143 Windmill blades / 144 Hydro turbine / 145 Battery layer cell / 146 Lighthouse beam sweep / 147 Campfire cone / 148 Firefly constellation / 149 Geothermal well section / 150 Lightning rod
+**XVI. Games & Chance**: 151 Puzzle cube / 152 Labyrinth slab / 153 Domino chain reaction / 154 Dice probability cup / 155 Nesting dolls / 156 Playing-card fan / 157 Dartboard target / 158 Go-board eyes / 159 Marble-run track / 160 Block bearing tower
+**XVII. Textiles & Patterns**: 161 Andean woven band / 162 Persian carpet warp / 163 Honeycomb weave grid / 164 Silk reeling bench / 165 Knot-record cord / 166 Origami bird / 167 Kite frame pattern / 168 Embroidery hoop face / 169 Tassel spindle / 170 Woven basket pattern
+**XVIII. Circuits & Digital**: 171 Circuit-board mountain / 172 Data waterfall / 173 Chip city grid / 174 Signal-tower topology / 175 Binary cascade / 176 Server ice aisle / 177 Sensor dragonfly / 178 Neural-net vine / 179 Current fork junction / 180 Hologram projector bench
+**XIX. Ancient & Relics**: 181 Crystal obelisk / 182 Hatching egg / 183 Double-helix staircase / 184 Floating compass / 185 Shattered mask / 186 Lens eyeball / 187 Oracle-bone turtle / 188 Bronze ding tripod / 189 Agate concentric layers / 190 Dunhuang ribbon
+**XX. Geometry & Composites**: 191 Parabolic arch cable / 192 Mobius strip band / 193 Klein-bottle maze / 194 Golden spiral shell / 195 Isometric projection frame / 196 Sierpinski triangle tent / 197 Axonometric exploded view / 198 Wave interference pool / 199 Spiral galaxy disc / 200 Rising bubble tower
 
 ## 6. Install
 
